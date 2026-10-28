@@ -1,0 +1,173 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f3f5fb;
+  color: #263238;
+}
+
+.app header {
+  background: #3949ab;
+  color: white;
+  text-align: center;
+  padding: 25px 15px;
+}
+
+header h1 {
+  margin: 0 0 8px;
+}
+
+header p {
+  margin: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+.form-card,
+.list-section {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  margin-bottom: 25px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+  color: #3949ab;
+  margin-top: 0;
+}
+
+form {
+  display: grid;
+  gap: 12px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #cbd0dc;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+textarea {
+  min-height: 85px;
+  resize: vertical;
+}
+
+button {
+  border: none;
+  padding: 10px 13px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+}
+
+.apply-btn {
+  background: #3949ab;
+  padding: 13px;
+  font-size: 16px;
+}
+
+.apply-btn:hover {
+  background: #283593;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 850px;
+}
+
+th,
+td {
+  padding: 13px;
+  border-bottom: 1px solid #e4e7ee;
+  text-align: left;
+}
+
+th {
+  background: #eef0ff;
+  color: #303f9f;
+}
+
+.status {
+  display: inline-block;
+  padding: 6px 9px;
+  border-radius: 15px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.pending {
+  background: #fff0c2;
+  color: #8a6100;
+}
+
+.approved {
+  background: #d7f5df;
+  color: #176b35;
+}
+
+.rejected {
+  background: #ffe0e0;
+  color: #a32121;
+}
+
+.actions {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+.approve-btn {
+  background: #26964b;
+}
+
+.reject-btn {
+  background: #e04b4b;
+}
+
+.delete-btn {
+  background: #555b66;
+}
+
+.empty {
+  text-align: center;
+  padding: 20px;
+  color: #777;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 0 10px;
+    margin: 15px auto;
+  }
+
+  .form-card,
+  .list-section {
+    padding: 16px;
+  }
+
+  header h1 {
+    font-size: 23px;
+  }
+}
