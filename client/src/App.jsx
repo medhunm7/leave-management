@@ -5,7 +5,8 @@ import {
   Menu, X, CalendarCheck, BriefcaseBusiness, TrendingUp, Trash2, RefreshCw
 } from 'lucide-react';
 
-const API = 'http://localhost:5000/api';
+const BASE_URL = (import.meta.env.VITE_API_URL || "http://localhost:5000").replace(/\/+$/, "");
+const API = `${BASE_URL}/api`;
 const blankForm = {
   employeeName: '', employeeId: '', department: '', leaveType: 'Casual Leave',
   startDate: '', endDate: '', reason: ''

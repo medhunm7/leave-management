@@ -1,19 +1,13 @@
 {
-  "name": "leave-management-client",
+  "name": "leave-management-app",
   "version": "1.0.0",
   "private": true,
-  "type": "module",
+  "description": "Full Stack Leave Management System",
   "scripts": {
-    "dev": "vite --host 0.0.0.0",
-    "build": "vite build",
-    "preview": "vite preview"
-  },
-  "dependencies": {
-    "@vitejs/plugin-react": "^4.3.4",
-    "vite": "^6.0.7",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "lucide-react": "^0.468.0"
-  },
-  "devDependencies": {}
+    "dev": "npm run start",
+    "client": "npm --prefix client run dev",
+    "server": "npm --prefix server run dev",
+    "build": "npm --prefix client run build",
+    "start": "npm --prefix server start"
+  }
 }
